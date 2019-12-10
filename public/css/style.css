@@ -1,4 +1,8 @@
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+.exo1 button {
+  background-color: #11dd00;
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */
