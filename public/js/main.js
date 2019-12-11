@@ -6,7 +6,7 @@ for (let i = 0; i < link.length; i++) {
         lien: link[i],
         exo: classe[i]
     });
-    if (i != 4) {
+    if (i != 5) {
         classe[i].style.display = 'none';
     }
 }
@@ -81,8 +81,18 @@ let generator = document.querySelector('.exo5 button');
 
 generator.addEventListener('click', () => {
     let image = document.createElement('img');
-    image.setAttribute('src', 'image/egg.png');
+    image.setAttribute('src', 'public/image/egg.png');
     console.log(image);
     generator.nextElementSibling.appendChild(image);
+});
+
+// Exo 6
+
+let calcul = document.getElementsByClassName('level1')[0];
+let nombre = document.querySelectorAll('.level1 input');
+let egal = document.querySelector('.level1 button');
+
+egal.addEventListener('click', () => {
+    egal.nextElementSibling.innerHTML = Number(nombre[0].value) + Number(nombre[1].value);
 });
 
