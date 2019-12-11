@@ -44,4 +44,11 @@ section {
   width: 10%;
 }
 
+.level2 button {
+  border-radius: 10px;
+}
+.level2 button:hover {
+  background-color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
