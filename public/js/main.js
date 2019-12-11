@@ -6,24 +6,25 @@ for (let i = 0; i < link.length; i++) {
         lien: link[i],
         exo: classe[i]
     });
-    if (i != 0) {
+    if (i != 4) {
         classe[i].style.display = 'none';
     }
 }
-let currentPan = panel[0].exo.getAttribute('class');
+
 panel.forEach(e => {
     e.lien.addEventListener('click', () => {
+        console.log(e);
+
         panel.forEach(a => {
             a.lien.classList.replace('text-white', 'text-primary');
             a.lien.classList.replace('bg-primary', 'bg-white');
             a.exo.style.display = 'none';
         });
 
-
         e.lien.classList.replace('text-primary', 'text-white');
         e.lien.classList.replace('bg-white', 'bg-primary');
         e.exo.style.display = 'block';
-        currentPan = e.exo.getAttribute('class');
+
     });
 });
 
@@ -52,5 +53,36 @@ input.addEventListener('keypress', event => {
 button2.addEventListener('click', () => {
     h2.innerHTML = 'Welcome ' + input.value;
     input.value = '';
+});
+
+// Exo 4
+
+let rectangle = document.getElementsByClassName('rectangle');
+let btnSwitch = document.querySelectorAll('.exo4 button');
+let count = 0;
+let square = document.getElementsByClassName('square')[0];
+btnSwitch[0].addEventListener('click', () => {
+    count++;
+    if (count % 2 == 1) {
+        rectangle[0].removeChild(square);
+        rectangle[1].appendChild(square);
+
+    } else {
+        rectangle[1].removeChild(square);
+        rectangle[0].appendChild(square);
+    }
+    console.log(count);
+    btnSwitch[1].innerHTML = `nombre de click ${count}`
+});
+
+// Exo 5
+
+let generator = document.querySelector('.exo5 button');
+
+generator.addEventListener('click', () => {
+    let image = document.createElement('img');
+    image.setAttribute('src', 'image/egg.png');
+    console.log(image);
+    generator.nextElementSibling.appendChild(image);
 });
 
