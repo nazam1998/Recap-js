@@ -66,7 +66,7 @@
     <section class="exo5 p-5 container">
         <h2>Générer des éléments du DOM</h2>
         <p>Cliquez sur le bouton ci-dessous pour générer des oeufs.</p>
-        <button class="bg-success text-white">Ajouter un 9</button>
+        <button class="bg-success text-white">Ajouter un oeuf</button>
         <div class="mb-5"></div>
     </section>
     <section class="exo6 p-5 container">
@@ -108,13 +108,30 @@
         </div>
     </section>
 </div>
-<section class="exo7">
+<section class="exo7 p-5 container">
 
+    <h2>Todo List</h2>
+    <hr>
+    
+    <div class="row container">
+        <input class="col-12 my-3 ajouteur" type="text " placeholder="Que dois-je faire ?">
+        <button class="col-1 mx-1 text-center">Toutes</button>
+        <button class="col-2 mx-1 text-center">Complétées</button>
+        <button class="col-1 mx-1 text-center">A faire</button>
+    </div>
+    <div class="liste">
+        <div id="toutes"></div>
+        <div id="complete"></div>
+        <div id="faire"></div>
+    </div>
+
+    </ul>
+    <hr>
 
 </section>
 
 <body>
-    <script src="public/js/main.js"></script>
+    <script type='module' src="public/js/main.js"></script>
 </body>
 
 </html>
