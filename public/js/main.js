@@ -19,7 +19,7 @@ import {
 
 let link = document.querySelectorAll('#nav a');
 let classe = document.getElementsByTagName('section');
-let panel = []
+    let panel = []
 let fonct = [exo1(), exo3(), exo4(), exo5(), exo6(), exo7()];
 for (let i = 0; i < link.length; i++) {
     panel.push({

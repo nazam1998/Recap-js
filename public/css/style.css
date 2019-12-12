@@ -29,7 +29,6 @@ section {
 
 .button-Square {
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
 }
@@ -54,6 +53,24 @@ section {
 .exo7 {
   display: flex;
   flex-direction: column;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
+li input {
+  flex: 1;
+}
+li span {
+  flex: 8;
+}
+li i {
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
