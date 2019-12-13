@@ -54,8 +54,14 @@ section {
   display: flex;
   flex-direction: column;
 }
+.exo7 button {
+  border-radius: 10px;
+  background-color: #bbbbbb;
+  margin-bottom: 20px;
+}
 
 li {
+  padding: 10px 0;
   list-style: none;
   display: flex;
   border-top: 1px solid black;
@@ -71,6 +77,15 @@ li span {
 }
 li i {
   flex: 1;
+}
+li [type=text] {
+  flex: 8;
+}
+
+[type=checkbox]:not(:checked) + label:before,
+[type=checkbox]:checked + label:before {
+  background-color: orange;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

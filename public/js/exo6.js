@@ -28,6 +28,8 @@ function exo6() {
         e.addEventListener('click', () => {
             input2.value += e.innerHTML;
             signe = e.innerHTML;
+            p.innerHTML = input2.value;
+            input2.value = '';
             cpt++;
         });
     });
@@ -36,18 +38,15 @@ function exo6() {
         a.addEventListener('click', () => {
             if (cpt % 2 == 1) {
                 num2 += a.innerHTML;
-
-
             } else {
                 num1 += a.innerHTML;
             }
             input2.value += a.innerHTML;
-            p.innerHTML = input2.value;
         });
     });
 
     egal2.addEventListener('click', () => {
-
+        p.innerHTML += input2.value + ' = ';    
         switch (signe) {
             case '+':
                 res = Number(num1) + Number(num2);
@@ -65,7 +64,7 @@ function exo6() {
         }
         num1 = '';
         num2 = '';
-        p.innerHTML = res;
+        p.innerHTML += res;
         input2.value = '';
     });
 
@@ -77,4 +76,6 @@ function exo6() {
     });
 }
 
-export {exo6}
+export {
+    exo6
+}

@@ -48,18 +48,29 @@ section
 .exo7
     display: flex
     flex-direction: column
+    button
+        border-radius: 10px
+        background-color: #bbbbbb
+        margin-bottom: 20px
 
-li 
-
+li
+    padding: 10px 0
     list-style: none
     display: flex
     border-top: 1px solid black
     border-bottom: 1px solid black
     justify-content: center
     align-items: center
-    input 
-        flex:1
-    span 
-        flex: 8
-    i 
+    input
         flex: 1
+    span
+        flex: 8
+    i
+        flex: 1
+    [type=text]
+        flex: 8
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before
+    background-color: orange
+    color: white
